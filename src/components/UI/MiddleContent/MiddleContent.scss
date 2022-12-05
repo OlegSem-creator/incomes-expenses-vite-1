@@ -1,0 +1,15 @@
+.middle-content {
+  flex: 1 1 auto;
+  background-color: rgb(193, 211, 255);
+  padding: 30px 10px;
+  &__wrapper {
+    height: 100%;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

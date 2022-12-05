@@ -1,0 +1,7 @@
+.left-link {
+  text-transform: uppercase;
+  font-weight: 700;
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}

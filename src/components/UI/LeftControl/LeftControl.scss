@@ -1,0 +1,15 @@
+.left-control {
+  padding-bottom: 10px;
+  &__title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  &__button {
+    font-size: 14px;
+    background-color: #fff;
+    padding: 4px 10px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.footer {
+  background-color: rgb(28, 55, 123);
+  color: white;
+  text-transform: uppercase;
+  padding: 20px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

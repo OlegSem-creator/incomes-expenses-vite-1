@@ -1,0 +1,26 @@
+.right-content {
+  background-color: rgb(104, 141, 233);
+  padding: 30px 20px;
+  &__wrapper {
+    padding-bottom: 20px;
+    &:not(:last-child) {
+      border-bottom: 3px dashed black;
+      margin-bottom: 20px;
+    }
+  }
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  &__item {
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    margin-bottom: 5px;
+  }
+  &__price {
+    font-weight: 700;
+  }
+}
