@@ -14,6 +14,7 @@ const Header = () => {
               <li className="menu-header__link">Expenses</li>
               <li className="menu-header__link">Borrow</li>
               <li className="menu-headerr__link">Lend</li>
+              <li className="menu-headerr__link">Exchanges</li>
               <li className="menu-header__link">Other</li>
               <li className="menu-header__link">Summary</li>
             </ul>
