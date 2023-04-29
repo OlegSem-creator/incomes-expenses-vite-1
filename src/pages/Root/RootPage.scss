@@ -1,0 +1,31 @@
+.root {
+  height: 100vh;
+  background-color: rgb(28, 55, 123);
+  color: #fff;
+  text-align: center;
+  padding: 180px 0 100px 0;
+
+  &__title {
+    font-size: 60px;
+    line-height: 1.1;
+  }
+  &__subtitle {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+  &__text {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 10px 7px 0;
+    &_sm {
+      font-size: 17px;
+    }
+  }
+  &__link {
+    color: #90f4ff;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

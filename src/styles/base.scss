@@ -100,3 +100,69 @@
     display: none;
   }
 }
+
+.authform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(28, 55, 123);
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  &__title {
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  &__subtitle {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__input {
+    display: block;
+    padding: 8px 20px;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__text {
+    margin-top: 20px;
+  }
+  &__link {
+    text-transform: uppercase;
+    color: #90f4ff;
+    margin-left: 7px;
+  }
+}
+
+.buttons {
+  background-color: rgb(55, 112, 255);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background-color: rgb(102, 146, 255);
+    color: rgb(24, 50, 115);
+  }
+}
+
+.links {
+  color: rgb(164, 190, 255);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.link-home {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: none;
+  margin: 0 0 15px 0;
+}
