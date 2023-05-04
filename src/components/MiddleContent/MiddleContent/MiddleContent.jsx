@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import MiddleForm from "../MiddleForm/MiddleForm";
+import ItemForm from "../../forms/ItemForm/ItemForm";
 import MiddleItem from "../MiddleItem/MiddleItem";
 
 import "./MiddleContent.scss";
@@ -18,7 +18,8 @@ const MiddleContent = (props) => {
     <div className="middle-content">
       <div className="middle-content__wrapper">
         <h2 className="middle-content__title">{props.title}</h2>
-        <MiddleForm />
+
+        <ItemForm />
 
         <MiddleItem
           date="12.12.2022"
