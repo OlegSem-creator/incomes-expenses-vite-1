@@ -1,15 +1,14 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import LogInPage from "./pages/Auth/LogInPage";
-import SignUpPage from "./pages/Auth/SignUpPage";
-import ResetPage from "./pages/Auth/ResetPage";
-import ResetPasswordPage from "./pages/Auth/ResetPasswordPage";
-// import DashboardPage from "./DashboardPages/DashboardPage";
-// import RootPage from "./pages/RootPage/RootPage";
 import RootLayout from "./pages/Root/Root";
-import RootPage from "./pages/Root/RootPage";
-// import DashboardPage from "./DashboardPages/DashboardPage";
-import DashboardHomePage from "./pages/Dashboard/DashboardHomePage";
+import HomePage from "./pages/Home/Home";
+import IncomesPage from "./pages/Incomes/Incomes";
+import ExpensesPage from "./pages/Expenses/Expenses";
+import BorrowPage from "./pages/Borrow/Borrow";
+import LendPage from "./pages/Lend/Lend";
+import ExchangesPage from "./pages/Exchanges/Exchanges";
+import OtherPage from "./pages/Other/Other";
+import SummaryPage from "./pages/Summary/Summary";
 
 const router = createBrowserRouter([
   {
@@ -18,51 +17,35 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <RootPage />,
-        children: [
-          {
-            index: true,
-            element: <DashboardHomePage />,
-            children: [
-              {
-                index: true,
-                element: <Incomes />,
-              },
-              {
-                path: "/expenses",
-                element: <Epenses />,
-              },
-              {
-                path: "/borrow",
-                element: <Borrow />,
-              },
-              {
-                path: "/lend",
-                element: <Lend />,
-              },
-              {
-                path: "/other",
-                element: <Other />,
-              },
-            ],
-          },
-        ],
+        element: <HomePage />,
       },
       {
-        path: "login",
-        element: <LogInPage />,
+        path: "incomes",
+        element: <IncomesPage />,
       },
       {
-        path: "signup",
-        element: <SignUpPage />,
+        path: "expenses",
+        element: <ExpensesPage />,
       },
       {
-        path: "reset",
-        element: <ResetPage />,
+        path: "borrow",
+        element: <BorrowPage />,
       },
       {
-        path: "reset-password",
-        element: <ResetPasswordPage />,
+        path: "lend",
+        element: <LendPage />,
+      },
+      {
+        path: "exchanges",
+        element: <ExchangesPage />,
+      },
+      {
+        path: "other",
+        element: <OtherPage />,
+      },
+      {
+        path: "summary",
+        element: <SummaryPage />,
       },
     ],
   },
