@@ -1,9 +1,9 @@
 import "./SubCategory.scss";
 
-const SubCategory = () => {
+const SubCategory = (props) => {
   return (
     <li className="subcategory">
-      <button>subcategory</button>
+      <span className="subcategory__item">{props.title}</span>
     </li>
   );
 };

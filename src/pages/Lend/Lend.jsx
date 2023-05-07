@@ -1,10 +1,16 @@
-import Content from "../../components/Content/Content";
+import LeftContent from "../../components/LeftContent/LeftContent/LeftContent";
+import MiddleContent from "../../components/MiddleContent/MiddleContent";
+import RightContent from "../../components/RightContent/RightContent";
 
 const LendPage = () => {
   return (
-    <>
-      <Content />
-    </>
+    <section className="content">
+      <div className="content__wrapper">
+        <LeftContent title="Lend" />
+        <MiddleContent title="Lend" />
+        <RightContent />
+      </div>
+    </section>
   );
 };
 

@@ -1,17 +1,12 @@
 import SubCategory from "./SubCategory";
 
+import "./SubCategories.scss";
+
 const SubCategories = () => {
   return (
-    <ul className="subcategories-wrapper">
-      <li>
-        <SubCategory />
-      </li>
-      <li>
-        <SubCategory />
-      </li>
-      <li>
-        <SubCategory />
-      </li>
+    <ul className="subcategories">
+      <SubCategory title="restaurant" />
+      <SubCategory title="other" />
     </ul>
   );
 };
